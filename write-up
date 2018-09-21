@@ -1,0 +1,56 @@
+Ifdhal Suharmitan
+1506757541
+
+Latihan tutorial :
+  *Project Viral
+     1. 
+        a. Tidak terjadi compile error karena tidak ada syntax pada PageController.java
+           yang mengalami kesalahan
+        b. Terjadi whitable error page karena html tersebut memiliki explicit mapping
+           yang berbeda dengan request mapping
+        c. Untuk meminta mapping untuk suatu page html dari controller agar dapat diakses
+           urlnya secara langsung dengan menuliskan url ditambah garis miring dan isi dari
+           request mapping
+           
+     2. 
+        a. Tidak terjadi compile error karena tidak ada syntax pada PageController.java
+           yang mengalami kesalahan
+        b. Tidak mengalami perubahan dari sebelumnya dan tetap bisa berjalan karena metod
+           index yang diganti menjadi viral hanya sebatas pergantian nama metod saja
+           
+     3. 
+        a. Tidak terjadi compile error karena tidak ada syntax pada PageController.java
+           yang mengalami kesalahan
+        b. Kembali terjadi whitable error page karena return type nya sudah menjadi "viral2jari"
+           sehingga berbeda dengan request mappingnya yaitu "viral"
+        c. Return type pada method controller digunakan untuk mengembalikan nilai dari type
+           tersebut sesuai dengan request mappingnya
+        
+
+  *Request Parameter
+  	 1. Karena tulisan "In My Feeling" sudah tertimpa dengan nilai yang ada pada th:text pada
+  	    tag p html yang nilainya sudah berganti sesuai dengan nilai pada request parameter 
+  	 2. Setelah request mapping diganti dari /challenge menjadi /viral/challenge, hasil yang
+  	    ditampilkan di browser sama dengan request mapping /challenge karena request mapping
+  	    /viral juga terdapat dalam controller sehingga tidak menimbulkan error dan menghasilkan
+  	    isi web sesuai dengan request mapping /challenge
+  	 3. 
+  	    a. Terdapat whitable error page karena string nama sebagai parameter request mapping tidak
+  	       ditampilkan di url
+  	    b. Dengan adanya pergantian string nama yang tidak disyaratkan dalam request mapping,
+  	       maka localhost:8080/challenge tidak mengalami error whitable page namun pada web
+  	       menghasilkan string nama bernilai null
+  	    c. Dengan adanya default nama pada parameter request mapping yaitu "kiki", maka setiap
+  	       request mapping challenge, string nama akan bernilai "kiki"
+  	       
+  	       
+   *Path Variabel
+     1. Halaman tersebut menghasilkan whitable error page karena string nama sebagai parameter
+        request mapping tidak terdapat dalam url localhost:8080/challenge
+     2. Terjadi whitable error page karena terjadi ambiguitas pada request mapping mana yang
+        harus digunakan oleh browser untuk mengakses url
+     3. Jika menggunakan request mapping dengan ada string name sebagai request parameter maka
+        pada halaman muncul nama dari nilai pada string name yang ada pada request mapping diikuti
+        dengan teks lainnya
+  	    
+          
